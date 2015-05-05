@@ -2,7 +2,26 @@
 
 \begin{enumerate}
     \item Prove that
-    \begin{equation}
+    \begin{equation*}
         \exists x \forall y P(x, y) \leftrightarrow \forall y \exists x P(x, y)
-    \end{equation}
+    \end{equation*}
+
+    (Curiously, the ``reverse" of this implication is not true. That is,
+
+    \begin{equation*}
+        \forall y \exists x P(x, y) \leftrightarrow \exists x \forall y P(x, y)
+    \end{equation*}
+
+    How do you reconcile this?)
+
+    \item Prove the following inference rules
+
+    \[ \frac{P \rightarrow Q, Q \rightarrow R}{P \rightarrow R} \]
+    \[ \frac{P \rightarrow Q, \neg Q}{\neg P} \]
+    \[ \frac{\neg P \rightarrow \neg Q}{Q \rightarrow P} \]
+    
+    \item Is the following also true? Prove or disprove.
+
+    \[ \frac{\neg P \rightarrow \neg Q}{P \rightarrow Q} \]
+
 \end{enumerate}
