@@ -1,0 +1,15 @@
+\problemsection{Quine}
+
+\noindent Write a Python program whose source code (assume that it is named
+\verb|main.py|) has the following property:
+
+\begin{verbatim}
+$ python3 main.py >main_.py
+$ diff main.py main_.py
+$ # There is no difference!
+\end{verbatim}
+
+Note that this implies that \verb|main_.py| is a valid Python program as well and
+can be executed to the same effect!
+
+Extra points if your program defines a function to achieve this.
