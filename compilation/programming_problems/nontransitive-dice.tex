@@ -1,0 +1,52 @@
+\problemsection{Nontransitive Dice}
+
+\begin{definition}
+A die $A$ wins against a die $B$ if, in a roll, the number shown by die $A$ is
+greater than the number shown in die $B$.
+\end{definition}
+
+\begin{definition}
+A die $A$ is \emph{stronger} than a die $B$ if it has greater probability of
+winning against die $B$.
+\end{definition}
+
+Obviously, a conventional fair die is no stronger than any other conventional
+fair die. This problem will deal with dice that are more likely to show a
+certain value than others.
+
+\textbf{Note:} Each \emph{face} of every die has an equal probability of showing
+up; it is the way the values are assigned to these faces that makes them differ
+from your conventional six-sided die.
+
+Given two dice, determine if the first die ($A$) or the second die ($B$) is
+stronger.
+\\
+
+\problemsection{Input}
+
+\noindent Each test case is made up of twelve integers. The first six indicate
+the values shown on the faces of die $A$ while the next six indicate the values
+shown in the faces of die $B$.
+\\
+
+\problemsection{Output}
+
+\noindent Output \verb|A| or \verb|B| if die $A$ or die $B$ is stronger. If they
+are of equal strength, output \verb|tie|.
+\\
+
+\problemsection{Example Input}
+
+\begin{verbatim}
+3 3 3 3 3 3 4 4 4 4 0 0
+4 4 4 4 0 0 5 5 5 1 1 1
+6 6 2 2 2 2 5 5 5 1 1 1
+\end{verbatim}
+
+\problemsection{Example Output}
+
+\begin{verbatim}
+B
+B
+A
+\end{verbatim}
